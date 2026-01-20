@@ -1,0 +1,120 @@
+
+/* style.css */
+
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    background: linear-gradient(135deg, #ffafbd, #ffc3a0);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Main container */
+  .container {
+    background: #ffffffcc;
+    backdrop-filter: blur(10px);
+    padding: 40px 50px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    text-align: center;
+    width: 90%;
+    max-width: 500px;
+    transition: 0.3s ease;
+  }
+  
+  .container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+  }
+  
+  /* Heading */
+  h1 {
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  /* Labels and inputs */
+  label {
+    display: block;
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 8px;
+    text-align: left;
+  }
+  
+  input[type="text"],
+  input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    outline: none;
+    margin-bottom: 20px;
+    transition: 0.2s;
+  }
+  
+  input[type="text"]:focus,
+  input[type="file"]:focus {
+    border-color: #ff6f61;
+    box-shadow: 0 0 8px rgba(255, 111, 97, 0.3);
+  }
+  
+  /* Button styling */
+  button {
+    background: #ff6f61;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  button:hover {
+    background: #ff3b2e;
+    transform: scale(1.05);
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 600px) {
+    .container {
+      padding: 25px;
+    }
+    
+    h1 {
+      font-size: 1.6rem;
+    }
+  }
+  
+  /* Align the dropdown menu to the left */
+#memeStyle {
+    display: block;
+    width: 50%;       /* adjust width if needed */
+    padding: 8px;
+    margin-top: 5px;
+    margin-left: 0;   /* left corner */
+    border-radius: 8px;
+    border: 2px solid #ddd;
+    font-size: 1rem;
+  }
+  
+  /* Optional: align label to left too */
+  label[for="memeStyle"] {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    font-weight: 600;
+  }
+  

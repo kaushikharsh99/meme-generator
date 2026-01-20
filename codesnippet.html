@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meme Maker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Meme Maker</h1>
+
+    <!-- Meme Form -->
+    <form id="memeForm" enctype="multipart/form-data">
+      <label for="image">Upload Image:</label>
+      <input type="file" id="image" name="image" accept="image/*">
+
+      <label for="topText">Top Text:</label>
+      <input type="text" id="topText" name="topText" placeholder="Enter top text">
+
+      <label for="bottomText">Bottom Text:</label>
+      <input type="text" id="bottomText" name="bottomText" placeholder="Enter bottom text">
+
+      <label for="memeStyle">Font Style:</label>
+      <select id="memeStyle" name="memeStyle">
+        <option value="" disabled selected>Select font</option>
+        <option value="classic">Classic</option>
+        <option value="comic">Comic</option>
+        <option value="bold">Bold</option>
+        <option value="funny">Funny</option>
+      </select>
+
+      <br><br>
+      <button type="submit">Generate Meme</button>
+    </form>
+
+    <hr style="margin: 30px 0; border: 1px solid #eee;">
+
+    <!-- Search Image Section -->
+    <h3>Or Search an Image</h3>
+    <input type="text" id="searchInput" placeholder="Describe your meme image..." />
+    <button type="button" id="searchBtn">Search</button>
+
+    <div id="imageResults" style="margin-top: 20px;"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
