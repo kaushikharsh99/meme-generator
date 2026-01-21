@@ -2,7 +2,6 @@
 
 A simple, responsive, and fun web application for creating memes directly in your browser. Built with HTML5, CSS3, and modern JavaScript.
 
-![meme-generator Preview](https://via.placeholder.com/800x400?text=meme-generator+Preview)
 
 ## 🚀 Features
 
@@ -65,24 +64,6 @@ The project contains logic in `script.js` to search for images using the Unsplas
     *   Replace `const UNSPLASH_ACCESS_KEY = "YOUR_UNSPLASH_ACCESS_KEY";` with your actual key.
 3.  **Update HTML**:
     *   The current `codesnippet.html` may need the search input elements added to interface with the JS. Ensure you have elements with `id="searchInput"` and `id="searchBtn"` in your HTML if you wish to use this feature.
-
-## 🎨 Customization
-
-### Adding New Styles
-You can add more text styles by modifying the `switch` statement in `script.js` inside the `drawMeme()` function:
-
-```javascript
-case 'mystyle':
-  fontStyle = 'MyFont, sans-serif';
-  ctx.fillStyle = 'purple';
-  break;
-```
-
-And adding the option to the `<select>` menu in `codesnippet.html`:
-
-```html
-<option value="mystyle">My Style</option>
-```
 
 ## 🤝 Contributing
 
